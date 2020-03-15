@@ -1,0 +1,29 @@
+import datetime
+
+#collect user name
+print("Please enter your name")
+name = input()
+
+#collect user age and convert to integer
+print("Please enter your age")
+age = input()
+age = int(age)
+
+#collect how many copies the user would like and convert to integer
+print("How many copies would you like?")
+copies = input()
+copies = int(copies)
+      
+#get the current year      
+current = datetime.datetime.now()
+currentYear = current.year
+
+#calculate the year of their 100th birthday
+year100 = 100-age+currentYear
+year100 = str(year100)
+
+#print number of copies user requested
+count = 0
+while count < copies:
+        print(name + " will turn 100 in "+year100)
+        count += 1
